@@ -1,0 +1,229 @@
+.projects-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 20px 0px;
+}
+.project-withsvg {
+	margin: -30px 0px 0px;
+}
+.project {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+.project-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.project-title,
+.project-future > h5 {
+	font-family: 'Calligraffitti', cursive;
+}
+.project-techStack {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 100%;
+}
+.project-techStack > img {
+	width: 50px;
+}
+.project-img {
+	height: 250px;
+	position: relative;
+	
+}
+.project-img > img {
+	width: 300px;
+	border-radius: 5px;
+}
+.project-link-btn {
+	display: flex;
+	justify-content: space-evenly;
+}
+.project-link-btn > button {
+	border-radius: 25px;
+}
+.project-link-btn > button > a {
+	text-decoration: none;
+}
+.for-svg {
+	margin: 30px 0 0;
+}
+.Layer-0Pokemon,
+.Layer-1Pokemon,
+.Layer-0Equipment,
+.Layer-1Equipment,
+.Layer-2Equipment {
+	width: 255px;
+	height: 350px;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	border: 2px solid yellow;
+	box-shadow: 0px 0px 1px;
+}
+.Layer-0Healthcare,
+.Layer-2Healthcare {
+	transform: scale(0.5, 0.5);
+	border-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 1px;
+}
+.Layer-0Healthcare {
+	position: absolute;
+	top: -75px;
+	left: 68px;
+}
+.Layer-1Healthcare {
+	position: relative;
+	top: 30px;
+	transform: scale(0.75, 0.75);
+	border-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 1px;
+}
+.Layer-2Healthcare {
+	position: relative;
+	top: -80px;
+	left: -80px;
+}
+.Layer-0Pokemon {
+	position: absolute;
+	top: 0px;
+	left: -70px;
+	transform: scale(0.5, 0.5) rotate(348deg);
+	z-index: 2;
+}
+.Layer-1Pokemon {
+	position: relative;
+	top: -50px;
+	bottom: 120px;
+	left: 70px;
+	transform: scale(0.5, 0.5) rotate(16deg);
+}
+.Layer-1Equipment {
+	position: absolute;
+	top: -30px;
+	left: -50px;
+	transform: scale(0.7, 0.7);
+	z-index: 4;
+}
+.Layer-0Equipment {
+	position: relative;
+	top: -90px;
+	bottom: 120px;
+	left: 50px;
+	transform: scale(0.5, 0.5);
+	z-index: 3;
+}
+.Layer-2Equipment {
+	position: absolute;
+	top: 30px;
+	bottom: 120px;
+	left: 80px;
+	transform: scale(0.5, 0.5) rotate(2deg);
+	z-index: 4;
+}
+
+@media screen and (min-width: 576px) {
+	.project {
+		flex-direction: row;
+		/* gap: 20px; */
+	}
+	.project > div {
+		width: 50%;
+	}
+	.project-techStack {
+		width: 80%;
+	}
+	.project-img {
+		height: auto;
+	}
+
+	.project-img > img {
+		width: 350px;
+		border-radius: 5px;
+	}
+	.for-svg {
+		margin: -30px 0 0;
+	}
+	.Layer-0Pokemon,
+	.Layer-1Pokemon {
+		width: 300px !important;
+	}
+	.Layer-0Pokemon {
+		position: relative;
+		top: 120px;
+		left: 20px;
+		transform: scale(0.7, 0.7) rotate(348deg);
+	}
+	.Layer-1Pokemon {
+		position: absolute;
+		top: -50px;
+		bottom: 100px;
+		left: 115px;
+		transform: scale(0.7, 0.7) rotate(6deg);
+	}
+	.Layer-1Equipment {
+		width: 350px;
+		top: -30px;
+		left: 20px;
+		transform: scale(1, 1);
+	}
+	.Layer-0Equipment {
+		top: -220px;
+		transform: scale(0.7, 0.7);
+		width: 350px;
+	}
+	.Layer-2Equipment {
+		top: 220px;
+		bottom: 120px;
+		transform: scale(0.7, 0.7);
+	}
+	.Layer-0Healthcare,
+	.Layer-2Healthcare {
+		transform: scale(0.75, 0.75);
+	}
+	.Layer-1Healthcare {
+		top: -20px;
+		transform: scale(1, 1);
+	}
+	.Layer-2Healthcare {
+		top: 80px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.Layer-0Pokemon {
+		width: 250px !important;
+		top: 175px;
+		left: 40px;
+		transform: rotate(348deg);
+	}
+	.Layer-1Pokemon {
+		width: 250px !important;
+		top: 0px;
+		bottom: 100px;
+		left: 210px;
+		transform: rotate(6deg);
+	}
+	.Layer-0Equipment {
+		transform: scale(1, 1);
+		left: 180px;
+		width: 425;
+	}
+	.Layer-1Equipment {
+		width: 450px;
+	}
+	.Layer-2Equipment {
+		transform: scale(1, 1) rotate(342deg);
+	}
+	.Layer-0My {
+		position: relative;
+		top: 30px;
+		left: 50px;
+	}
+}

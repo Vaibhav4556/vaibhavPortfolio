@@ -1,0 +1,62 @@
+.nav-header {
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1000;
+	background-color: white;
+}
+
+.myMenu-big {
+	display: none;
+}
+
+.offcanvas-end {
+	width: 240px;
+	transition: 500ms;
+	transition-timing-function: ease-in-out;
+}
+.navbar-toggler {
+	background: white;
+}
+
+.bottom-nav {
+	display: block;
+	width: auto !important;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.bottomNav-text:hover {
+	border-bottom: 3px solid;
+	transition: border 500ms ease;
+}
+
+.pc-dropDown {
+	border: 1px solid;
+	border-radius: 20px;
+}
+
+.pc-dropDown > a {
+	color: rgb(0, 0, 0) !important;
+}
+
+.pc-dropDown-side > a {
+	color: rgb(0, 0, 0) !important;
+}
+
+@media screen and (min-width: 576px) {
+	.myMenu-big {
+		display: flex;
+	}
+	.nav-header {
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+	.bottom-nav {
+		display: none;
+	}
+}

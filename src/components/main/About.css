@@ -1,0 +1,53 @@
+.about-wrapper {
+	min-height: 90vh;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-content > p,
+.about-content > h4 {
+	line-height: 2rem;
+}
+
+.about-btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-btns a {
+	text-decoration: none;
+}
+.my-profile img {
+	width: 200px;
+	/* filter: grayscale(100%) sepia(100%); */
+	border-radius: 250px;
+}
+.my-profile img:hover {
+	filter: unset;
+	transform: scale(1.05);
+}
+.myname {
+	font-family: 'Calligraffitti', cursive;
+	font-size: 38px;
+	line-height: 3.5rem;
+}
+
+@media screen and (min-width: 576px) {
+	.about-wrapper {
+		flex-direction: row;
+	}
+	.about-me,
+	.my-profile {
+		width: 50%;
+	}
+	.my-profile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.my-profile img {
+		width: 250px;
+	}
+}
