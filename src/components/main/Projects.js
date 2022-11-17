@@ -49,7 +49,7 @@ function Projects() {
         herokuicon,
         netlifyicon,
       ],
-      credentials: [],
+      credentials: [""],
       github: "https://github.com/Vaibhav4556/result_management_36",
       live: "https://result-36.herokuapp.com/",
       bg: tertiary,
@@ -192,16 +192,16 @@ function Projects() {
                 {/* For displaying credentials for the site */}
                 <div className="project-credentials">
                   {credentials.length > 0 ? (
-                    <h4>Credentails for the live site</h4>
+                    <h4></h4>
                   ) : (
                     ""
                   )}
-                  {credentials.map(({ email, password }, index) => (
+                  {/* {credentials.map(({ email, password }, index) => (
                     <p>
-                      {password === "Admin@123" ? "Admin" : "Doctor"} : {email}{" "}
+                      {password === "" ? "Admin" : ""} : {email}{" "}
                       - {password}
                     </p>
-                  ))}
+                  ))} */}
                 </div>
 
                 {/* Button for source code and live link */}
