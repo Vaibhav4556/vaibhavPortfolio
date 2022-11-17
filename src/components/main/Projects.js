@@ -36,7 +36,7 @@ function Projects() {
         "To find out the result of the pericular semester with respect to the roll number of the student. In this site admin can create result,edit result,and delete result .\n Students can view there result for there semesters and it will show detail scorecard for that roll number.",
       why: "During college time we will view result in similar way. So why isn't there any  site for all displaying the results. This is one that spraked me to create this site.",
       whatnext: [
-        "To add more feature like notes and study material for subjects",
+        "To add more feature like notes and study material for subjects && it will take upto 7 days to approve registration request after verification",
       ],
       imgSrc: [realLogin, result],
       techStack: [
@@ -110,7 +110,9 @@ function Projects() {
       about:
         "This web app is used to track our expenses. It will helpfull for storing the transactions related to any expense and  cerdit we can update it at at time to time",
       why: "To keep tracking of our income & expenses is very usefull",
-      whatnext: [ 'To add more features like advice regarding the best investment '],
+      whatnext: [
+        "To add more features like advice regarding the best investment ",
+      ],
       imgSrc: [trackexpense, expense1],
       techStack: [
         javascripticon,
@@ -191,11 +193,7 @@ function Projects() {
 
                 {/* For displaying credentials for the site */}
                 <div className="project-credentials">
-                  {credentials.length > 0 ? (
-                    <h4></h4>
-                  ) : (
-                    ""
-                  )}
+                  {credentials.length > 0 ? <h4></h4> : ""}
                   {/* {credentials.map(({ email, password }, index) => (
                     <p>
                       {password === "" ? "Admin" : ""} : {email}{" "}
