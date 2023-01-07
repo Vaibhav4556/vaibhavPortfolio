@@ -14,6 +14,7 @@ import result from "./../../assets/equipment/result.png";
 import cart from "./../../assets/healthcare/cart.png";
 import home from "./../../assets/healthcare/home.png";
 import movieHome from "./../../assets/favmovie/movieHome.png";
+import admin from "./../../assets/favmovie/admin.png";
 import reacticon from "./../../assets/techStack/react.png";
 import nodeicon from "./../../assets/techStack/nodejs.svg";
 import netlifyicon from "./../../assets/techStack/netlify-icon.svg";
@@ -56,6 +57,11 @@ function Projects() {
       text: secondary,
       heading: primary,
     },
+
+
+
+
+    
     {
       name: "EASYCHAT APP",
       about:
@@ -83,12 +89,12 @@ function Projects() {
       heading: tertiary,
     },
     {
-      name: "My Favourite Movie - To have your own movie list",
+      name: "ALL IN ONE SHOP",
       about:
-        "Here one can save their favourite movies and share with friends. Able to ask friends to give movie suggestions. ",
-      why: "To have a movie list to give suggestions to friends and they can have some insight here",
-      whatnext: ["To add more features like movie trailor, download link"],
-      imgSrc: [movieHome],
+        "Here one can shop their favourite items of various category. ",
+      why: "",
+      whatnext: ["To add more category"],
+      imgSrc: [movieHome,admin],
       techStack: [
         reacticon,
         materialuiicon,
@@ -98,8 +104,8 @@ function Projects() {
         netlifyicon,
       ],
       credentials: [],
-      github: "https://github.com/Vaibhav4556/addMoviesapp",
-      live: "https://astounding-bunny-b93960.netlify.app/",
+      github: "https://github.com/Vaibhav4556/all-in-one-shop",
+      live: "https://all-in-one-shop.onrender.com/",
       bg: tertiary,
       text: secondary,
       heading: primary,
@@ -132,6 +138,11 @@ function Projects() {
   // Make sure that the bg of next div is the previous svg fill
   return (
     <div className="projects-wrapper">
+
+    
+    
+
+
       {/* With project list will traverse and create projects */}
       {projectList.map(
         (
