@@ -53,7 +53,12 @@ function About() {
               worked on define set of instructions to collect ground truth data
               for the product development.
             </p>
-            <p style={{fontWeight:"bold"}}>Common credentials:- a@gmail.com, 123456</p>
+            <p style={{fontWeight:"bold"}}>Common credentials:- a@gmail.com, 123456 (admin)
+               
+            </p>
+            <p style={{fontWeight:"bold"}}>Common credentials:- b@gmail.com, 123456 (public)
+               
+               </p>
           </div>
 
           {/* Buttons to resume an contact me */}
